@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بانک سؤالات ریاضی</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <!-- تاریخ و زمان -->
+        <div id="date-time" class="date-time"></div>
+
+        <!-- تب‌ها -->
+        <div class="tabs">
+            <button class="tab-button active" onclick="switchTab('home')">خانه</button>
+            <button class="tab-button" onclick="switchTab('questions')">بانک سوالات</button>
+            <button class="tab-button" onclick="switchTab('login')">ورود</button>
+        </div>
+
+        <!-- صفحه خانه -->
+        <div id="home" class="tab-content active">
+            <h1>به سایت خوارزمی خوش آمدید</h1>
+            <p>این سایت برای مدیریت و دانلود سوالات طراحی شده است.</p>
+        </div>
+
+        <!-- صفحه بانک سوالات -->
+        <div id="questions" class="tab-content">
+            <h1>بانک سوالات</h1>
+            <div class="categories">
+                <div class="category" onclick="openPopup('محاسبات اعداد گویا')">محاسبات اعداد گویا</div>
+                <div class="category" onclick="openPopup('معادله')">معادله</div>
+                <div class="category" onclick="openPopup('تجزیه عبارت‌های جبری')">تجزیه عبارت‌های جبری</div>
+                <div class="category" onclick="openPopup('رابطه فیثاغورس')">رابطه فیثاغورس</div>
+                <div class="category" onclick="openPopup('توان')">توان</div>
+                <div class="category" onclick="openPopup('جذر')">جذر</div>
+                <div class="category" onclick="openPopup('زاویه‌های مرکزی و محاطی')">زاویه‌های مرکزی و محاطی</div>
+                <div class="category" onclick="openPopup('هم‌نهشتی مثلث‌ها')">هم‌نهشتی مثلث‌ها</div>
+                <div class="category" onclick="openPopup('احتمال')">احتمال</div>
+                <div class="category" onclick="openPopup('بردار و مختصات')">بردار و مختصات</div>
+            </div>
+        </div>
+
+        <!-- صفحه ورود -->
+        <div id="login" class="tab-content">
+            <h1>ورود</h1>
+            <form id="loginForm">
+                <label for="username">نام کاربری:</label>
